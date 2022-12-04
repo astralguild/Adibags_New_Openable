@@ -1,7 +1,7 @@
 ## Interface: 100002
 ## Title: AdiBags - New Openable
 ## Notes: Filters all openable items for Adibags
-## Version: 2.2
+## Version: 2.3
 ## Author: DenL, Kylier
 ## Original Author: 
 ## X-Category: Bags & Inventory
