@@ -18,27 +18,27 @@ function mod:OnInitialize()
 end
  
 function mod:Filter(slotData)
-	local tooltipInfo
+    local tooltipInfo
  
-	if slotData.bag == BANK_CONTAINER then
-		tooltipInfo = C_TooltipInfo.GetInventoryItem("player", BankButtonIDToInvSlotID(slotData.slot, nil))
-	else
-		tooltipInfo = C_TooltipInfo.GetBagItem(slotData.bag, slotData.slot)		
-	end
+    if slotData.bag == BANK_CONTAINER then
+        tooltipInfo = C_TooltipInfo.GetInventoryItem("player", BankButtonIDToInvSlotID(slotData.slot, nil))
+    else
+        tooltipInfo = C_TooltipInfo.GetBagItem(slotData.bag, slotData.slot)
+    end
  
-	TooltipUtil.SurfaceArgs(tooltipInfo)
-	for _, line in ipairs(tooltipInfo.lines) do
-		TooltipUtil.SurfaceArgs(line)
-	end
+    TooltipUtil.SurfaceArgs(tooltipInfo)
+    for _, line in ipairs(tooltipInfo.lines) do
+        TooltipUtil.SurfaceArgs(line)
+    end
  
-	for _, line in ipairs(tooltipInfo.lines) do
-		local t = line.leftText
+    for _, line in ipairs(tooltipInfo.lines) do
+        local t = line.leftText
         if t then
-	        if t == ITEM_OPENABLE or string.find(t, OPENABLE_CONTAINER) or string.find(t, OPENABLE_USEOPEN) then
-	            return OPENABLE_CATEGORY_TITLE
-	        elseif t == LOCKED then
-	        	return LOCKBOXES_CATEGORY_TITLE
-	        end
-	    end
-	end
+            if t == ITEM_OPENABLE or string.find(t, OPENABLE_CONTAINER) or string.find(t, OPENABLE_USEOPEN) then
+                return OPENABLE_CATEGORY_TITLE
+            elseif t == LOCKED then
+                return LOCKBOXES_CATEGORY_TITLE
+            end
+        end
+    end
 end
