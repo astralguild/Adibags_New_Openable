@@ -1,7 +1,7 @@
 ## Interface: 100002
 ## Title: AdiBags - New Openable
 ## Notes: Filters all openable items for Adibags
-## Version: 2.3
+## Version: 2.4
 ## Author: DenL, Kylier
 ## Original Author: 
 ## X-Category: Bags & Inventory
@@ -9,4 +9,4 @@
 ## X-Wago-ID: WqKQMaKx
 ## X-Curse-Project-ID: 719726
 
-AdiBags_Openable.lua
+AdiBags_New_Openable.lua
