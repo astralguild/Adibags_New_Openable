@@ -3,7 +3,6 @@
 ## Notes: Filters all openable items for Adibags
 ## Version: 2.4
 ## Author: DenL, Kylier
-## Original Author: 
 ## X-Category: Bags & Inventory
 ## Dependencies: AdiBags
 ## X-Wago-ID: WqKQMaKx
