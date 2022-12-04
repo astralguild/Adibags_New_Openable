@@ -1,0 +1,10 @@
+## Interface: 100002
+## Title: AdiBags - New Openable
+## Notes: Filters all openable items for Adibags
+## Version: 2.1
+## Author: Kylier & Terra
+## Original Author: DenL
+## X-Category: Bags & Inventory
+## Dependencies: AdiBags
+
+AdiBags_Openable.lua
