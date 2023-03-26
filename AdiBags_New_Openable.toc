@@ -1,4 +1,4 @@
-## Interface: 100002
+## Interface: 100007
 ## Title: AdiBags - New Openable
 ## Notes: Filters all openable items for Adibags
 ## Version: 2.4
